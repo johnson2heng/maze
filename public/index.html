@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+        }
+
+        canvas {
+            display: block;
+        }
+
+        #blocker {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+
+        #instructions {
+            width: 100%;
+            height: 100%;
+            display: -webkit-box;
+            display: -moz-box;
+            display: box;
+            -webkit-box-orient: horizontal;
+            -moz-box-orient: horizontal;
+            box-orient: horizontal;
+            -webkit-box-pack: center;
+            -moz-box-pack: center;
+            box-pack: center;
+            -webkit-box-align: center;
+            -moz-box-align: center;
+            box-align: center;
+            color: #ffffff;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        #text{
+            position: fixed;
+            top:0;
+            left:50%;
+            transform: translateX(-50%);
+            line-height: 50px;
+            font-size: 20px;
+            color:#fff;
+            text-shadow: 1px 1px 2px #000;
+        }
+    </style>
+</head>
+<!--<link rel="stylesheet" href="css/index.css">-->
+<body>
+<div id="blocker">
+
+    <div id="instructions">
+        <span style="font-size:40px">点击屏幕开始</span>
+        <br />
+        <br />
+        (W, A, S, D = 移动, SPACE = 跳跃, MOUSE = 移动视角)
+    </div>
+
+</div>
+<div id="text">第1关</div>
+</body>
+<script src="js/dop.min.js"></script>
+<script src="js/three.js"></script>
+<script src="js/threebsp.js"></script>
+<script src="js/PointerLockControls.js"></script>
+<script src="js/stats.min.js"></script>
+<script src="js/Detector.js"></script>
+<script src="js/index.js"></script>
+</html>
